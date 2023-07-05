@@ -54,9 +54,7 @@ namespace DiscordBot
                 bool exitFlag = false;
                 while (!exitFlag)
                 {
-                    // Aquí puedes realizar cualquier otra lógica que necesites ejecutar en cada iteración del ciclo
-
-                    // Ejemplo: Esperar una entrada del usuario para finalizar el programa
+                    
                     Console.WriteLine("Presiona 'q' y Enter para salir...");
                     string input = Console.ReadLine();
                     if (input.ToLower() == "q")
@@ -64,7 +62,6 @@ namespace DiscordBot
                         exitFlag = true;
                     }
 
-                    // También puedes agregar una espera breve (por ejemplo, 1 segundo) para evitar un consumo excesivo de recursos del sistema
                     await Task.Delay(1000);
                 }
             }
